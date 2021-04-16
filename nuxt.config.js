@@ -4,7 +4,7 @@ import { fiber } from 'fibers';
 export default {
     target: 'static',
     head: {
-        title: 'the-divergent-thinking',
+        title: 'THE 拡散発想',
         htmlAttrs: {
             lang: 'ja',
         },
@@ -14,16 +14,16 @@ export default {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1',
             },
-            { hid: 'description', name: 'description', content: '' },
+            { hid: 'description', name: 'description', content: '「THE 拡散思考」は、あなたのモノづくりを手助けするためのアプリケーションです。気になるワードを入力すると、それに関連するワードが拡散され、新たなる発想をあなたに届けます。' },
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [],
+    css: ['~/assets/scss/elements'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: ['~/plugins/injectEnvData.ts'],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -39,7 +39,7 @@ export default {
     modules: [],
 
     styleResources: {
-        scss: [],
+        scss: ['~/assets/scss/variables.scss', '~/assets/scss/mixin.scss'],
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -47,7 +47,7 @@ export default {
         loaders: {
             scss: {
                 implementation: sass,
-                sassOption: {
+                sassOptions: {
                     fiber,
                 },
             },

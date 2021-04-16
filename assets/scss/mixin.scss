@@ -1,0 +1,7 @@
+@use './variables.scss';
+
+@mixin media-min($width: variables.$bp-md) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
