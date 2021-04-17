@@ -31,9 +31,8 @@
 <style lang="scss" scoped>
 .footer {
     background: $c-gray-light;
-    margin-top: $m-lg;
+    margin-top: $m-xl;
     color: $c-gray-dark;
-    font-size: 1.4rem;
 
     &__inr {
         display: flex;
@@ -46,16 +45,16 @@
         font-weight: bold;
 
         &:not(:first-of-type) {
-            margin-top: $m-lg;
+            margin-top: $m-xl;
         }
     }
     &__list,
     &__text-group {
-        margin-top: $m-xs;
+        margin-top: $m-sm;
     }
     &__text-group {
         > *:not(:first-child) {
-            margin-top: $m-xs;
+            margin-top: $m-sm;
         }
     }
     &__list-item {
@@ -67,7 +66,7 @@
         }
     }
     &__copy {
-        margin-top: $m-lg;
+        margin-top: $m-xl;
         text-align: center;
     }
 }

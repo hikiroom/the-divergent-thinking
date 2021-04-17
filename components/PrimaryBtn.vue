@@ -22,11 +22,12 @@ export default Vue.extend({
     text-align: center;
     background-color: $c-primary;
     color: $c-white;
-    padding: 6px 32px;
+    padding: $p-xs $p-xl;
     border-radius: 4px;
     white-space: nowrap;
+    font-size: 1.4rem;
     @include media-min() {
-        padding: 6px 40px;
+        padding: $p-xs $p-2xl;
     }
 }
 </style>

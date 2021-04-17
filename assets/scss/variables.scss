@@ -1,16 +1,10 @@
 /* color */
 $c-primary: #2962FF;
-$c-primary-light: lighten($c-primary, 15%);
-$c-primary-dark: darken($c-primary, 15%);
 $c-black: #212121;
-$c-black-dark: #000000;
-$c-black-alpha: rgba($c-black, 0.3);
 $c-gray: #e0e0e0;
 $c-gray-light: #eeeeee;
 $c-gray-dark: #616161;
-$c-gray-dark-secondary: lighten($c-gray-dark, 15%);
 $c-white: #fffdfc;
-$c-red: #D50000;
 
 /* padding */
 $p-2xs: 4px;
@@ -18,24 +12,15 @@ $p-xs: 8px;
 $p-sm: 16px;
 $p-md: 20px;
 $p-lg: 24px;
-$p-xl: 28px;
+$p-xl: 32px;
+$p-2xl: 40px;
 
 /* margin */
-$m-2xs: 4px;
 $m-xs: 8px;
 $m-sm: 16px;
 $m-md: 20px;
-$m-lg: 40px;
-$m-xl: 60px;
+$m-lg: 32px;
+$m-xl: 40px;
 
 /* breakpoint */
 $bp-md: 786px;
-
-/* width */
-$w-md: 1024px;
-
-/* shadow */
-$shadow-sm: 0 3px 6px 0 rgba($c-black-dark, 0.15);
-$shadow-md: 0 3px 8px 0 rgba($c-black-dark, 0.1);
-
-$z-index: floatAdditionalBtn, loadingBox, configBox;

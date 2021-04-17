@@ -8,7 +8,7 @@
                 title="拡散したいワードを入力してください"
                 placeholder="拡散したいワードを入力してください"
             />
-            <PrimaryBtn @click="divergent">拡散する</PrimaryBtn>
+            <PrimaryBtn @click="toDivergent">拡散する</PrimaryBtn>
           </div>
       </div>
       <Footer />
@@ -22,11 +22,13 @@ export default Vue.extend({
     data() {
         return ({
             query: '',
-            isError: false,
         });
     },
     methods: {
-        divergent():void {
+        /**
+         * 拡散結果ページへ遷移
+         */
+        toDivergent():void {
             if (this.query !== '') {
                 this.$router.push({
                     path: '/divergent',
@@ -46,8 +48,8 @@ export default Vue.extend({
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 80vh;
-        padding: 40px;
+        height: 78vh;
+        padding: $p-md;
     }
     &__contents-inr {
         max-width: 400px;
@@ -58,7 +60,10 @@ export default Vue.extend({
 
         > * {
             &:not(:first-child) {
-                margin-top: 40px;
+                margin-top: $m-lg;
+                @include media-min() {
+                    margin-top: $m-xl;
+                }
             }
         }
     }

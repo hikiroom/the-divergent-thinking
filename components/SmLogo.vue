@@ -18,17 +18,11 @@
     }
     &__sub {
         display: block;
-        font-size: 1rem;
-        @include media-min() {
-            font-size: 1.2rem;
-        }
+        font-size: 1.2rem;
     }
     &__main {
         display: block;
-        font-size: 2rem;
-        @include media-min() {
-            font-size: 2.4rem;
-        }
+        font-size: 2.4rem;
     }
 }
 </style>

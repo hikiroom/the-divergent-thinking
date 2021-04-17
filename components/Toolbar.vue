@@ -10,17 +10,16 @@
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid $c-gray;
-    padding: 32px 24px;
+    padding: $p-lg $p-md;
     @include media-min() {
-        padding: 32px 24px;
         flex-direction: row;
     }
 
     > *:not(:first-child) {
-        margin-top: 24px;
+        margin-top: $m-md;
         @include media-min() {
             margin-top: 0;
-            margin-left: 32px;
+            margin-left: $m-lg;
         }
     }
 }

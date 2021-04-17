@@ -4,7 +4,7 @@ import { fiber } from 'fibers';
 export default {
     target: 'static',
     head: {
-        title: 'THE 拡散発想',
+        title: 'THE 拡散思考',
         htmlAttrs: {
             lang: 'ja',
         },
@@ -14,7 +14,7 @@ export default {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1',
             },
-            { hid: 'description', name: 'description', content: '「THE 拡散思考」は、あなたのモノづくりを手助けするためのアプリケーションです。気になるワードを入力すると、それに関連するワードが拡散され、新たなる発想をあなたに届けます。' },
+            { hid: 'description', name: 'description', content: '「THE 拡散思考」は、拡散的思考（発散的思考）を用いて、あなたのモノづくりを手助けするためのアプリケーションです。' },
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },

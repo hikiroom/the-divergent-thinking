@@ -13,11 +13,7 @@
     background: $c-black;
     border-radius: 60px;
     color: $c-white;
-    padding: 8px 16px;
-    font-size: 1.4rem;
     white-space: nowrap;
-    @include media-min() {
-        padding: 16px 24px;
-    }
+    padding: $p-sm $p-lg;
 }
 </style>

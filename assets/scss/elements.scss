@@ -16,8 +16,12 @@ html {
 }
 body {
     width: 100%;
-    font-size: 1.6rem;
-    line-height: 1.8;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: $c-black;
+    @include media-min() {
+        font-size: 1.6rem;
+    }
 
     &.is-fixed {
         position: fixed;
@@ -41,7 +45,7 @@ ul {
     list-style: none;
 }
 a {
-    color: $c-black-dark;
+    color: $c-black;
 
     &:hover {
         text-decoration: none;

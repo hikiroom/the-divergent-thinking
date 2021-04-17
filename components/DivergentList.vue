@@ -33,12 +33,10 @@ export default Vue.extend({
     &__btn {
         width: 100%;
         height: 100%;
-        font-size: 1.4rem;
         text-align: left;
-        padding: 14px;
+        padding: $p-sm;
         @include media-min() {
-            font-size: 1.6rem;
-            padding: 16px;
+            padding: $p-md;
         }
     }
 }

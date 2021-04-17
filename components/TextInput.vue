@@ -5,8 +5,6 @@
         :title="title"
         :placeholder="placeholder"
         :value="value"
-        :aria-controls="ariaControls"
-        :aria-invalid="ariaInvalid"
         @input="$emit('input', $event.target.value)"
     >
 </template>
@@ -27,14 +25,6 @@ export default Vue.extend({
             type: String,
             default: '',
         } as PropOptions<string>,
-        ariaControls: {
-            type: [String, null],
-            default: null,
-        } as PropOptions<string|null>,
-        ariaInvalid: {
-            type: Boolean,
-            default: false,
-        } as PropOptions<boolean>,
     },
 });
 </script>
@@ -49,10 +39,14 @@ export default Vue.extend({
     border-radius: 4px;
     background: $c-white;
     color: $c-black;
-    padding: 8px 16px;
+    padding: $p-xs $p-sm;
+    font-size: 1.4rem;
+    @include media-min() {
+        font-size: 1.6rem;
+    }
 
     &::placeholder {
-        color: $c-gray;
+        color: $c-gray-dark;
     }
 }
 </style>
